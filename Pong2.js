@@ -51,13 +51,6 @@ var paddle2 = {
     speed: 8,
 }
 
-var widthPower = {
-    x: x,
-    y: y,
-    width: 50,
-    height: 50,
-}
-
 var context = canvas.getContext('2d')
 
 function drawBall(){
@@ -83,8 +76,6 @@ function drawpaddle2(){
     context.fill()
     context.closePath()
 }
-
-function draw
 
 function moveBall(){
     ball.x += ball.speedx;
