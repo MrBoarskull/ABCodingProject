@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+    h1{
+        font-weight: 700;
+        font-size: 100;
+        float: center;
+        text-align: center;
+    }
+    .Text{
+        font-size: 50;
+        text-align: center;
+    }
+    body{
+        background-color: #d3d389;
+        font-family:"Titillium Web";
+    }
+    .ColorCorector{
+        background-color: rgb(255, 255, 255);
+        padding:100;
+        margin:30;
+        margin-top:-110px;
+        text-align: center;
+        width:10px;
+        height:10;
+        border-radius: 20px;
+        transition:0.25s;
+    }
+    .NumberType{
+        text-align: center;
+        font-size: 50;
+        background-color: orange;
+        border:3px black groove;
+        margin-left: 450px;
+    }
+    .button{
+        padding:20px;
+        border-radius:10px;
+        transition:0.25s
+    }
+    .button:hover{
+        padding: 30px;
+    }
+</style>
+<body>
+    <h1>Guess The Number!</h1>
+    <h2 id="Instructions" class="Text">Try to guess the number between 1 and 100.</h2>
+    <p id="guessTracker" class="Text">You have guessed 0 times.</p>
+    <input type="number" id="userInput" class="NumberType">
+    <button onclick="buttonPressed()" class="button">guess</button>
+    <p id="resultText" class="Text"></p>
+    <div id="ColorBox" class="ColorCorector"></div>
+    <button onclick="Normal()" class="button">normal</button>
+    <button onclick="Hard()" class="button">hard</button>
+    <button onclick="Impossible()" class="button">Impossible</button>
+</body>
+<script 
+    src="GuessNumberGame.js">
+</script>
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    canvas{
+        width:800px;
+        height:600px;
+        background-color: rgb(24, 34, 27);
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+    }
+    button{
+        padding:30px;
+        border-radius:10px;
+        transition:0.25s;
+        float: center;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        border: 3px black solid;
+        width: 150px;
+    }
+    h1{
+        color: white;
+        margin: 10px;
+    }
+</style>
+<body>
+    <h1>Pong</h2>
+    <canvas id="gameboard" width="800" height="600"></canvas>
+    <h1 id="Score">0</h1>
+</body>
+<script src="Pong2.js"></script>
+</html>

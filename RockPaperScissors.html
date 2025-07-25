@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+    .Style{
+        text-align: center;
+        font-size: 50px;
+        float: center;
+        margin: 20px;
+    }
+    .Style2{
+        text-align: center;
+        font-size: 30px;
+        float: center;
+        margin: 20px
+    }
+    body{
+        font-family:"Titillium Web";
+    }
+    .button{
+        padding:30px;
+        border-radius:10px;
+        transition:0.25s;
+        float: center;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        border: 3px black solid;
+        width: 150px;
+    }
+
+    .battle{
+        padding:30px;
+        border-radius:10px;
+        transition:0.25s;
+        float: center;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        border: 3px black solid;
+        display:flex;
+        justify-content: center;
+    }
+
+    @keyframes rainbow{
+        0%{
+            color: green;
+        }
+        20%{
+            color: blue;
+        }
+        40%{
+            color: purple;
+        }
+        60%{
+            color: red;
+        }
+        80%{
+            color: yellow;
+        }
+        100%{
+            color: green;
+        }
+
+    }
+
+    h1{
+        animation: rainbow 5s infinite;
+    }
+</style>
+<body>
+    <h1 class="Style">ROCK, PAPER, SCISSORS!</h1>
+    <div  class="Style">
+        <button onclick="play('rock')" id="rock" class="button">🪨Rock</button>
+        <button onclick="play('paper')" id="paper" class="button">📜Paper</button>
+        <button onclick="play('scissors')" scissor" class="button">✂️Scissor</button>
+    </div>
+        
+    <div class="battle">
+        <div class="button">
+            <p id="PlayerChose"> you choose</p>
+            <p id="Emoji">❓</p>
+        </div>
+
+        <div class="button">
+            <p id="EnemyChose"> ai choose</p>
+            <p id="EnemyEmoji">❓</p>
+        </div>
+    </div>
+
+    <p id="result" class="Style2">Result</p>
+    <p id="score" class="Style2">Player 0/Computer 0</p>
+       
+</body>
+<script 
+    src="RockPaperScissor.js">
+</script>
+</html>
